@@ -1,0 +1,5 @@
+FROM quay.io/colinnewell/dancer-plugin-dbic-docker
+
+ARG userid=1001
+RUN groupadd developer && useradd --uid ${userid} -d /home/developer -g developer developer
+USER developer
