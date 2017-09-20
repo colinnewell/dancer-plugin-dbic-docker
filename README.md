@@ -1,6 +1,6 @@
 
 ```
-sudo docker build -t dancer-dbic --cache-from userid=$UID -f withUser.docker .
+sudo docker build -t dancer-dbic --build-arg userid=$UID -f withUser.docker .
 sudo docker-compose run devmachine bash
 ```
 
